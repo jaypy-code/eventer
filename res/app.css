@@ -1,0 +1,57 @@
+:root {
+    --backgound: rgba(0, 0, 0, 0.35);
+    --colour: white;
+}
+
+*{
+    user-select: none;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.mover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    -webkit-app-region: drag;
+}
+
+div.container{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--backgound);
+    color: var(--colour);
+    border-radius: 0.4rem;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.container div.day{
+    font-size: 60px;
+}
+
+div.container div.title{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 100px) {
+    div.container div.title,
+    div.container div.text {
+        display: none;
+    }
+
+    div.container div.day{
+        font-size: 45px;
+    }
+}

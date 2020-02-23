@@ -1,0 +1,17 @@
+{
+  "name": "Eventer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "JayPY Code <jaypy.code@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.0.1",
+    "electron-builder": "^22.3.2"
+  }
+}
