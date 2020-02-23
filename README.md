@@ -13,7 +13,7 @@ You can make a beautiful window on your screen ( Playing with colours ). Again b
 
 Like:
 ```
-{ "date": "2020/03/01 18:00", "title": "BFF Party", "background": "back", "color": "#fff" }
+{ "date": "2020/03/01 18:00", "title": "BFF Party", "background": "black", "color": "#fff" }
 ```
 
 # Build your own Eventer
