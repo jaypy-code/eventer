@@ -1,0 +1,74 @@
+*{
+    border: none;
+    outline: none;
+    overflow: hidden;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+body {
+    margin: 0;
+}
+
+div.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;   
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container div.image {
+    background-image: url('./event.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 35vw;
+    height: 35vw;
+    margin-right: 10vw;
+}
+
+div.container div.content {
+    width: 45vw;
+}
+
+div.container div.content div.buttons{
+    float: right;
+    margin-top: 30px;
+}
+
+div.container div.content div.buttons button{
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+div.container div.content div.buttons button.success{
+    background-color: #665df5;
+    color: #fff;
+
+    width: 130px;
+    height: 42px;
+
+    margin-right: 10px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.3s;
+}
+
+div.container div.content div.buttons button.success:hover{
+    background-color: #6c63ff;
+}
+
+div.container div.content div.buttons button.success svg{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-right: 10px;
+}

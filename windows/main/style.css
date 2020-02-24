@@ -1,6 +1,7 @@
 :root {
     --backgound: rgba(0, 0, 0, 0.35);
     --colour: white;
+    --radius: 0.4rem;
 }
 
 *{
@@ -29,7 +30,7 @@ div.container{
 
     background-color: var(--backgound);
     color: var(--colour);
-    border-radius: 0.4rem;
+    border-radius: var(--radius);
 
     display: flex;
     text-align: center;
@@ -39,6 +40,10 @@ div.container{
 
 div.container div.day{
     font-size: 60px;
+}
+
+div.container div.day.to{
+    font-size: 40px;
 }
 
 div.container div.title{
@@ -51,7 +56,11 @@ div.container div.title{
         display: none;
     }
 
-    div.container div.day{
+    div.container div.day {
         font-size: 45px;
+    }
+
+    div.container div.day.to {
+        font-size: 25px;
     }
 }

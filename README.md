@@ -4,16 +4,22 @@ For example: Next week, you'll go to a party at 6:00 PM. So you have a config fi
 
 Your config file must be like:
 ```
-{ "date": "2020/03/01 18:00", "title": "BFF Party", "background": "rgba(0, 0, 0, 0.35)", "color": "white" }
+{ "date": "2020/03/01 18:00", "title": "BFF Party" }
 ```
 
+# Make your event beautiful
+Beautiful widget must be beautiful with changing colours and radius or size of widget. Your widget setting has **background** for background color, **color** for text color, **radius** to make window a bit circle, **size** is size of window and like a square, **disabled** or **hide** used for hide your event.
 
-# Colours in Eventer
-You can make a beautiful window on your screen ( Playing with colours ). Again back to your config file with Pressing F3 when Eventer is open and you'll see two keys "background" and "color". You can edit both of them and write rgb, rgba, hex or colour name and etc. Then press F5 to refresh your config and see your changes.
-
-Like:
 ```
-{ "date": "2020/03/01 18:00", "title": "BFF Party", "background": "black", "color": "#fff" }
+{
+    "background": String, // Background colour - rgba, rgb, hex, ... - default is "rgba(0, 0, 0, 0.35)"
+    "color": String, // Text color - rgba, rgb, hex, ... - default is "white"
+    "colour": String, // Text colour - rgba, rgb, hex, ...
+    "radius" String, // Window radius - px, cm, inch, em, rem, ... - default is "0.4rem"
+    "size": Number, // Window size - 100, 200, 400, ... -  defualt is 200
+    "disabled": Boolean, // Hide window - true/false - default is true,
+    "hide": Boolean // Hide window - true/false
+}
 ```
 
 # Build your own Eventer
