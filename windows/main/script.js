@@ -52,6 +52,7 @@ function setDate(Time="", Title="Untitled"){
     }
 
     title.innerText = Title;
+    document.title = Title;
 }
 
 function setTheme(background='rgba(0, 0, 0, 0.35)', colour='white', radius='0.4rem'){
